@@ -9,15 +9,14 @@ export default function HeroSection() {
 
   {/* Dot grid overlay */}
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#1e293b_3px,transparent_0)] [background-size:24px_24px] opacity-30" />
-      <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-24 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center text-textLight">
-
+      <div className="relative max-w-7xl mx-auto px-6 pt-24 sm:pt-28 lg:pt-32 pb-20 lg:pb-24 grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center text-textLight">
         {/* LEFT CONTENT */}
         <div>
           <p className="text-xs uppercase tracking-widest text-blue-400 mb-4 font-bold">
             Finance Solution
           </p>
 
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
             Empowering the <br />
             Next Generation <br />
             of Financial <br />
@@ -33,7 +32,7 @@ export default function HeroSection() {
           {/* Email / Search Box (Exact Match) */}
 <div className="mt-8">
 
-  <div className="flex items-center h-12 w-[420px] rounded-2xl bg-[#fff] border border-slate-800 px-1.5">
+  <div className="flex items-center h-12 w-full sm:w-[420px] rounded-2xl bg-white border border-slate-800 px-1.5">
 
     {/* Icon */}
     <div className="flex h-8 w-8 items-center justify-center rounded-2xl bg-slate-800 text-slate-400 text-sm">
@@ -59,11 +58,11 @@ export default function HeroSection() {
         </div>
 
         {/* RIGHT SIDE FLOATING CARDS */}
-        <div className="relative h-[520px] w-full">
+        <div className="relative h-[480px] sm:h-[520px] lg:h-[520px] w-full mt-16 lg:mt-0">
 
         {/* API CARD */}
         <div
-            className="absolute top-6 right-12 w-[360px] rounded-xl bg-[#020617]/90 backdrop-blur border border-slate-800 p-4 shadow-2xl text-sm"
+            className="absolute top-4 sm:top-6 right-4 sm:right-12 w-[280px] sm:w-[360px] rounded-xl bg-[#020617]/90 backdrop-blur border border-slate-800 p-4 shadow-2xl text-sm"
             style={{ transform: "rotate(-6deg)" }}
         >
             <p className="text-green-400 text-xs mb-2">
@@ -78,7 +77,7 @@ export default function HeroSection() {
 
         {/* TRANSFER CARD */}
         <div
-            className="absolute top-44 right-24 w-[400px] rounded-xl bg-white text-black p-6 shadow-2xl z-10"
+            className="absolute top-36 sm:top-44 right-2 sm:right-24 w-[300px] sm:w-[400px] rounded-xl bg-white text-black p-6 shadow-2xl z-10"
             style={{ transform: "rotate(2deg)" }}
         >
             <div className="flex justify-between text-xs text-gray-500 mb-3">
@@ -103,7 +102,7 @@ export default function HeroSection() {
 
         {/* KPI CARD 1 */}
         <div
-            className="absolute bottom-20 right-72 w-[150px] rounded-xl bg-white text-black p-4 shadow-xl text-center"
+            className="absolute bottom-24 sm:bottom-20 right-40 sm:right-72 w-[130px] sm:w-[150px] rounded-xl bg-white text-black p-4 shadow-xl text-center"
             style={{ transform: "rotate(-4deg)" }}
         >
             <p className="text-2xl font-bold">0.01%</p>
@@ -112,7 +111,7 @@ export default function HeroSection() {
 
         {/* KPI CARD 2 */}
         <div
-            className="absolute bottom-14 right-36 w-[170px] rounded-xl bg-white text-black p-4 shadow-xl text-center"
+            className="absolute bottom-12 sm:bottom-14 right-6 sm:right-36 w-[140px] sm:w-[170px] rounded-xl bg-white text-black p-4 shadow-xl text-center"
             style={{ transform: "rotate(3deg)" }}
         >
             <p className="text-2xl font-bold">95%</p>
