@@ -5,6 +5,7 @@ import SecuritySection from "@/components/sections/SecuritySection";
 import Solution from "@/components/sections/Solution";
 import SuccessStories from "@/components/sections/SuccessStories";
 import PricingPage from "./pricing/page";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <SecuritySection/>
       <SuccessStories/>
       <PricingPage/>
+      <CTA/>
     </main>
   );
 }
