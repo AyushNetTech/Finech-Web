@@ -25,10 +25,10 @@ export default function Footer() {
           <div>
             <p className="font-medium text-slate-900 mb-4">Company</p>
             <ul className="space-y-3">
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Press</li>
-              <li>Blog</li>
+              <li className="hover:underline">About Us</li>
+              <li className="hover:underline">Careers</li>
+              <li className="hover:underline">Press</li>
+              <li className="hover:underline">Blog</li>
             </ul>
           </div>
 
@@ -36,10 +36,10 @@ export default function Footer() {
           <div>
             <p className="font-medium text-slate-900 mb-4">Products</p>
             <ul className="space-y-3">
-              <li>Payments</li>
-              <li>API & Developer Docs</li>
-              <li>Pricing</li>
-              <li>Security</li>
+              <li className="hover:underline">Payments</li>
+              <li className="hover:underline">API & Developer Docs</li>
+              <li className="hover:underline">Pricing</li>
+              <li className="hover:underline">Security</li>
             </ul>
           </div>
 
@@ -47,10 +47,10 @@ export default function Footer() {
           <div>
             <p className="font-medium text-slate-900 mb-4">Resources</p>
             <ul className="space-y-3">
-              <li>Help Center</li>
-              <li>FAQs</li>
-              <li>Case Studies</li>
-              <li>Webinars</li>
+              <li className="hover:underline">Help Center</li>
+              <li className="hover:underline">FAQs</li>
+              <li className="hover:underline">Case Studies</li>
+              <li className="hover:underline">Webinars</li>
             </ul>
           </div>
 
@@ -58,10 +58,10 @@ export default function Footer() {
           <div>
             <p className="font-medium text-slate-900 mb-4">Legal</p>
             <ul className="space-y-3">
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
-              <li>Compliance</li>
-              <li>Security & Trust</li>
+              <li className="hover:underline">Privacy Policy</li>
+              <li className="hover:underline">Terms of Service</li>
+              <li className="hover:underline">Compliance</li>
+              <li className="hover:underline">Security & Trust</li>
             </ul>
           </div>
 
@@ -69,8 +69,8 @@ export default function Footer() {
           <div>
             <p className="font-medium text-slate-900 mb-4">Contact</p>
             <ul className="space-y-3">
-              <li>Support</li>
-              <li>Partnerships</li>
+              <li className="hover:underline">Support</li>
+              <li className="hover:underline">Partnerships</li>
             </ul>
           </div>
 
@@ -81,8 +81,8 @@ export default function Footer() {
           <p>© 2025 Finech. All Rights Reserved.</p>
 
           <div className="flex gap-6">
-            <span className="cursor-pointer hover:text-slate-700">Login</span>
-            <span className="cursor-pointer hover:text-slate-700">Sign Up</span>
+            <span className="cursor-pointer hover:underline">Login</span>
+            <span className="cursor-pointer hover:underline">Sign Up</span>
           </div>
         </div>
 

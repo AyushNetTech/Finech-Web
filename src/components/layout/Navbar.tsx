@@ -21,11 +21,11 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-8 text-sm">
-          <li className="hover:text-slate-400 transition cursor-pointer">Home</li>
-          <li className="hover:text-slate-400 transition cursor-pointer">Solutions</li>
-          <li className="hover:text-slate-400 transition cursor-pointer">Integrations</li>
-          <li className="hover:text-slate-400 transition cursor-pointer">Pricing</li>
-          <li className="hover:text-slate-400 transition cursor-pointer">Resources</li>
+          <li className="hover:underline transition cursor-pointer">Home</li>
+          <li className="hover:underline transition cursor-pointer">Solutions</li>
+          <li className="hover:underline transition cursor-pointer">Integrations</li>
+          <li className="hover:underline transition cursor-pointer">Pricing</li>
+          <li className="hover:underline transition cursor-pointer">Resources</li>
         </ul>
 
         {/* Desktop Actions */}
@@ -57,11 +57,11 @@ export default function Navbar() {
       >
         <div className="px-6 py-6 space-y-6 text-sm text-white">
           <div className="space-y-4">
-            <p className="hover:text-slate-400 cursor-pointer">Home</p>
-            <p className="hover:text-slate-400 cursor-pointer">Solutions</p>
-            <p className="hover:text-slate-400 cursor-pointer">Integrations</p>
-            <p className="hover:text-slate-400 cursor-pointer">Pricing</p>
-            <p className="hover:text-slate-400 cursor-pointer">Resources</p>
+            <p className="hover:underline cursor-pointer">Home</p>
+            <p className="hover:underline cursor-pointer">Solutions</p>
+            <p className="hover:underline cursor-pointer">Integrations</p>
+            <p className="hover:underline cursor-pointer">Pricing</p>
+            <p className="hover:underline cursor-pointer">Resources</p>
           </div>
 
           <div className="pt-4 border-t border-white/10 space-y-4">
