@@ -3,6 +3,7 @@ import Features from "@/components/sections/Features";
 import HeroSection from "@/components/sections/HeroSection";
 import SecuritySection from "@/components/sections/SecuritySection";
 import Solution from "@/components/sections/Solution";
+import SuccessStories from "@/components/sections/SuccessStories";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Features />
       <Solution/>
       <SecuritySection/>
+      <SuccessStories/>
       <ApiShowcase />
     </main>
   );
