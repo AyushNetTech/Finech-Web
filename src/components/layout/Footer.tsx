@@ -1,71 +1,89 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#fff] mt-32">
-      <div className="max-w-7xl mx-auto px-6 py-20">
+    <footer className="relative bg-white mt-24">
+
+      {/* Dot grid background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#e5e7eb_1px,transparent_0)] [background-size:24px_24px]" />
+
+      <div className="relative max-w-7xl mx-auto px-6 py-20 text-sm text-slate-600">
 
         {/* TOP GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-10 lg:gap-12">
 
           {/* BRAND */}
-          <div>
-            <div className="flex items-center gap-2 text-black font-semibold text-lg mb-4">
-              <span className="text-blue-500">▲</span>
+          <div className="col-span-2 md:col-span-3 lg:col-span-1">
+            <div className="flex items-center gap-2 font-semibold text-lg text-slate-900 mb-3">
+              <span className="text-blue-600">▲</span>
               finech
             </div>
-
-            <p className="text-sm text-slate-700 leading-6 max-w-xs">
-              Finech provides secure and scalable financial APIs to help
-              businesses move money, manage risk, and grow globally.
+            <p className="text-sm text-slate-500">
+              support@finech.com
             </p>
-          </div>
-
-          {/* PRODUCT */}
-          <div>
-            <p className="text-sm font-semibold text-black mb-4">
-              Product
-            </p>
-            <ul className="space-y-3 text-sm text-slate-700">
-              <li className="hover:underline cursor-pointer">Payments</li>
-              <li className="hover:underline cursor-pointer">Pricing</li>
-              <li className="hover:underline cursor-pointer">Integrations</li>
-              <li className="hover:underline cursor-pointer">API Docs</li>
-            </ul>
           </div>
 
           {/* COMPANY */}
           <div>
-            <p className="text-sm font-semibold text-black mb-4">
-              Company
-            </p>
-            <ul className="space-y-3 text-sm text-slate-700">
-              <li className="hover:underline cursor-pointer">About</li>
-              <li className="hover:underline cursor-pointer">Careers</li>
-              <li className="hover:underline cursor-pointer">Blog</li>
-              <li className="hover:underline cursor-pointer">Contact</li>
+            <p className="font-medium text-slate-900 mb-4">Company</p>
+            <ul className="space-y-3">
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          {/* PRODUCTS */}
+          <div>
+            <p className="font-medium text-slate-900 mb-4">Products</p>
+            <ul className="space-y-3">
+              <li>Payments</li>
+              <li>API & Developer Docs</li>
+              <li>Pricing</li>
+              <li>Security</li>
             </ul>
           </div>
 
           {/* RESOURCES */}
           <div>
-            <p className="text-sm font-semibold text-black mb-4">
-              Resources
-            </p>
-            <ul className="space-y-3 text-sm text-slate-700">
-              <li className="hover:underline cursor-pointer">Documentation</li>
-              <li className="hover:underline cursor-pointer">Help Center</li>
-              <li className="hover:underline cursor-pointer">Status</li>
-              <li className="hover:underline cursor-pointer">Security</li>
+            <p className="font-medium text-slate-900 mb-4">Resources</p>
+            <ul className="space-y-3">
+              <li>Help Center</li>
+              <li>FAQs</li>
+              <li>Case Studies</li>
+              <li>Webinars</li>
+            </ul>
+          </div>
+
+          {/* LEGAL */}
+          <div>
+            <p className="font-medium text-slate-900 mb-4">Legal</p>
+            <ul className="space-y-3">
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+              <li>Compliance</li>
+              <li>Security & Trust</li>
+            </ul>
+          </div>
+
+          {/* CONTACT */}
+          <div>
+            <p className="font-medium text-slate-900 mb-4">Contact</p>
+            <ul className="space-y-3">
+              <li>Support</li>
+              <li>Partnerships</li>
             </ul>
           </div>
 
         </div>
 
-        {/* DIVIDER */}
-        <div className="mt-16 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-700">
-          <p>© 2026 Finech. All rights reserved.</p>
-          <p className="mt-4 md:mt-0">
-            Privacy Policy · Terms of Service
-          </p>
+        {/* BOTTOM BAR */}
+        <div className="mt-16 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500">
+          <p>© 2025 Finech. All Rights Reserved.</p>
+
+          <div className="flex gap-6">
+            <span className="cursor-pointer hover:text-slate-700">Login</span>
+            <span className="cursor-pointer hover:text-slate-700">Sign Up</span>
+          </div>
         </div>
 
       </div>
