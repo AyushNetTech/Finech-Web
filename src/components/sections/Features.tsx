@@ -30,7 +30,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="bg-[#F8FAFC] py-28">
+    <section className="bg-[#F8FAFC] py-16 sm:py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -39,22 +39,22 @@ export default function Features() {
             WHY CHOOSE FINECH?
           </p>
 
-          <h2 className="text-4xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4">
             Powering the Future of Finance
           </h2>
 
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">
             Unlock seamless transactions, secure financial services, and limitless scalability with our powerful, API-driven infrastructure.
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
 
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition duration-300"
+              className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 hover:shadow-md transition duration-300"
             >
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 {item.title}
@@ -69,7 +69,7 @@ export default function Features() {
                 <Image
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-70 object-contain mx-auto"
+                  className="w-full h-40 sm:h-52 lg:h-64 object-contain mx-auto"  
                   priority
                 />
               </div>
