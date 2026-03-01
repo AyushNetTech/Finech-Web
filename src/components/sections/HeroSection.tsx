@@ -25,28 +25,36 @@ export default function HeroSection() {
             Designed for You
           </h1>
 
-          <p className="mt-6 max-w-xl text-slate-300 text-sm leading-6">
+          <p className="mt-6 max-w-xl text-white text-sm leading-6">
             Powerful APIs and seamless integrations to help businesses move
             money, manage risk, and scale globally.
           </p>
 
-          {/* Email + CTA */}
-          <div className="mt-8 flex items-center gap-3">
-            <div className="flex items-center gap-2 rounded-full bg-[#020617] border border-borderDark px-4 py-2 text-sm">
-              <span>✉</span>
-              <input
-                type="email"
-                placeholder="Send your email"
-                className="bg-transparent outline-none text-textLight placeholder:text-textMuted"
-              />
-            </div>
+          {/* Email / Search Box (Exact Match) */}
+<div className="mt-8">
 
-            <button className="rounded-full bg-primary px-6 py-2 text-sm font-medium hover:opacity-90">
-              Talk to Sales →
-            </button>
+  <div className="flex items-center h-12 w-[420px] rounded-2xl bg-[#fff] border border-slate-800 px-1.5">
 
-            
-          </div>
+    {/* Icon */}
+    <div className="flex h-8 w-8 items-center justify-center rounded-2xl bg-slate-800 text-slate-400 text-sm">
+      ✉
+    </div>
+
+    {/* Input */}
+    <input
+      type="email"
+      placeholder="Send your email"
+      className="flex-1 ml-3 bg-transparent outline-none text-sm text-black placeholder:text-slate-500"
+    />
+
+    {/* CTA Button */}
+    <button className="ml-1 h-9 rounded-xl bg-blue-600 px-5 text-sm font-medium text-white hover:opacity-90 transition">
+      Talk to Sales →
+    </button>
+
+  </div>
+
+</div>
           <Partners />
         </div>
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Partners() {
   return (
     <div className="mt-20">
-      <p className="mb-6 text-xs uppercase tracking-widest text-gray-400">
+      <p className="mb-6 text-xs uppercase tracking-widest text-white">
         Partners in Financial Success
       </p>
 
