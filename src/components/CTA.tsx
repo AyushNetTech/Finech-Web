@@ -59,38 +59,45 @@ export default function CTA() {
       </div>
 
       {/* LOGO MARQUEE */}
-      <div className="relative bg-black py-6 overflow-hidden">
-        <div className="flex w-max animate-marquee gap-14 px-10 items-center text-white text-sm opacity-90">
-          {[
-            "Amazon",
-            "Dropbox",
-            "Loom",
-            "Medium",
-            "Twitch",
-            "Discord",
-            "Mailchimp",
-          ].map((brand) => (
-            <span key={brand} className="whitespace-nowrap font-medium">
-              {brand}
-            </span>
-          ))}
+        <div className="relative bg-black py-6 overflow-hidden">
+        <div className="marquee-wrapper">
 
-          {/* duplicate for seamless loop */}
-          {[
-            "Amazon",
-            "Dropbox",
-            "Loom",
-            "Medium",
-            "Twitch",
-            "Discord",
-            "Mailchimp",
-          ].map((brand) => (
-            <span key={`${brand}-dup`} className="whitespace-nowrap font-medium">
-              {brand}
-            </span>
-          ))}
+            {/* FIRST BELT */}
+            <div className="marquee gap-14 px-10 items-center text-white text-sm opacity-90">
+            {[
+                "Amazon",
+                "Dropbox",
+                "Loom",
+                "Medium",
+                "Twitch",
+                "Discord",
+                "Mailchimp",
+            ].map((brand) => (
+                <span key={brand} className="whitespace-nowrap font-medium">
+                {brand}
+                </span>
+            ))}
+            </div>
+
+            {/* SECOND BELT (IDENTICAL COPY) */}
+            <div className="marquee gap-14 px-10 items-center text-white text-sm opacity-90">
+            {[
+                "Amazon",
+                "Dropbox",
+                "Loom",
+                "Medium",
+                "Twitch",
+                "Discord",
+                "Mailchimp",
+            ].map((brand) => (
+                <span key={`${brand}-dup`} className="whitespace-nowrap font-medium">
+                {brand}
+                </span>
+            ))}
+            </div>
+
         </div>
-      </div>
+        </div>
     </section>
   );
 }
