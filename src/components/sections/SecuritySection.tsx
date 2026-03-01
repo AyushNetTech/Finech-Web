@@ -31,43 +31,55 @@ export default function SecuritySection() {
         <div className="grid md:grid-cols-2 gap-20 items-center">
 
           {/* LEFT SIDE */}
-          <div className="space-y-10">
-
+          <div className="space-y-6">
             {[
-              {
+                {
                 icon: <Lock size={20} />,
                 title: "End-to-End Encryption",
                 desc: "Every transaction is encrypted, safeguarding sensitive financial data from unauthorized access.",
-              },
-              {
+                },
+                {
                 icon: <ShieldCheck size={20} />,
                 title: "PCI DSS Level 1 Compliance",
                 desc: "Ensuring the highest level of payment security for processing transactions.",
-              },
-              {
+                },
+                {
                 icon: <Cpu size={20} />,
                 title: "AI-Powered Fraud Detection",
                 desc: "Advanced machine learning models analyze transaction patterns to detect and prevent fraudulent activities in real-time.",
-              },
-              {
+                },
+                {
                 icon: <FileCheck size={20} />,
                 title: "Regulatory Compliance (KYC, AML, PSD2)",
                 desc: "Built-in compliance solutions to meet global financial regulations and ensure a seamless user verification process.",
-              },
+                },
             ].map((item, i) => (
-              <div key={i} className="flex gap-4">
-                <div className="mt-1 text-gray-600">{item.icon}</div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">
-                    {item.title}
-                  </h4>
-                  <p className="text-gray-500 text-sm leading-relaxed">
-                    {item.desc}
-                  </p>
+                <div
+                key={i}
+                className="group relative pl-6 py-4 cursor-pointer transition-all duration-300"
+                >
+                {/* Blue Vertical Line */}
+                <div className="absolute left-0 top-0 h-full w-[3px] bg-blue-600 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top rounded-full"></div>
+
+                <div className="flex gap-4">
+                    <div className="mt-1 text-gray-600 group-hover:text-blue-600 transition">
+                    {item.icon}
+                    </div>
+
+                    <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition">
+                        {item.title}
+                    </h4>
+
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                        {item.desc}
+                    </p>
+                    </div>
                 </div>
-              </div>
+                </div>
             ))}
-          </div>
+
+            </div>
 
           {/* RIGHT SIDE CARD */}
           <div className="flex justify-center perspective-1000">
