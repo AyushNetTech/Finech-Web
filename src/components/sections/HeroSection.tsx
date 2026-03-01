@@ -13,7 +13,7 @@ export default function HeroSection() {
 
         {/* LEFT CONTENT */}
         <div>
-          <p className="text-xs uppercase tracking-widest text-blue-400 mb-4">
+          <p className="text-xs uppercase tracking-widest text-blue-400 mb-4 font-bold">
             Finance Solution
           </p>
 
