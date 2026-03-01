@@ -82,7 +82,7 @@ export default function Solution() {
 
           {/* LEFT CONTENT */}
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-blue-600 mb-6">
+            <p className="text-xs uppercase tracking-[0.3em] text-blue-600 mb-6 font-bold">
               APIs & DEVELOPER
             </p>
 
