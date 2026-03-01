@@ -10,7 +10,7 @@ export default function CTA() {
       <div className="absolute inset-0 bg-gradient-to-br from-[#0b1220] via-[#0a1a33] to-[#0e3a66]" />
 
       {/* Dot grid */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#1e293b_1px,transparent_0)] [background-size:22px_22px] opacity-30" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#f5f_1px,transparent_0)] [background-size:22px_22px] opacity-30" />
 
       <div className="relative px-6 py-20 text-center text-white max-w-4xl mx-auto">
 
