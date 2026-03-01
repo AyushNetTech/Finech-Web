@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Finech – Financial APIs Frontend Application
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is a frontend application developed as part of a **Frontend Development Assignment**.  
+The goal of the assignment is to translate a provided **Figma design** into a **production-ready, responsive web application** using **React.js, Next.js, and Tailwind CSS**.
 
+The implementation closely follows the Figma design in terms of layout, spacing, typography, colors, and component structure. The project emphasizes clean code, reusable components, and modern frontend best practices.
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **UI Library:** React.js
+- **Styling:** Tailwind CSS
+- **Package Manager:** npm
+- **Version Control:** Git
+- **Repository Hosting:** GitHub
+
+No additional UI frameworks or component libraries were used.
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+Ensure the following are installed on your system:
+- Node.js (LTS version recommended)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <your-github-repo-url>
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd finech-web
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+---
+
+## How to Run the Project Locally
+
+Start the development server using:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at:
+```
+http://localhost:3000
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project should run without errors on a clean environment.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Folder Structure Explanation
 
-To learn more about Next.js, take a look at the following resources:
+```
+project-root/
+│
+├── app/                    # Next.js app router pages
+│   ├── page.tsx            # Home page
+│   ├── pricing/page.tsx    # Pricing page
+│   └── layout.tsx          # Root layout
+│
+├── components/             # Reusable UI components
+│   ├── layout/             # Layout components (Navbar, etc.)
+│   └── sections/           # Page sections (Hero, Features, etc.)
+│
+├── public/                 # Static assets (images, logos)
+│
+├── styles/                 # Global styles
+│
+├── tailwind.config.js      # Tailwind configuration
+├── next.config.js          # Next.js configuration
+├── package.json            # Project dependencies and scripts
+└── README.md               # Project documentation
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is structured to ensure scalability, readability, and component reusability.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Assumptions and Trade-offs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Minor visual adjustments were made where exact pixel values were not explicitly defined in the Figma design.
+- Desktop-first approach was followed, with responsive behavior implemented for tablet and mobile screens.
+- Accessibility best practices (semantic HTML and readable contrast) were applied where applicable, though no dedicated accessibility library was used.
+- State management is handled using React hooks; no external state management library was introduced as it was not required.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Notes
+
+- The UI closely follows the provided Figma design.
+- All components were built from scratch using Tailwind CSS.
+- The repository uses meaningful commit messages and a clean commit history.
+- This project is intended for evaluation and assignment purposes.
+
+---
+
+## Optional
+
+If deployed, the live URL can be added here:
+```
+https://finech-web.vercel.app/
+```
