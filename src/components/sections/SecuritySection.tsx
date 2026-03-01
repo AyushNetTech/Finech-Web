@@ -1,4 +1,7 @@
+"use client";
+
 import { Lock, ShieldCheck, Cpu, FileCheck } from "lucide-react";
+import { FaStripe, FaCcVisa, FaCcMastercard, FaPaypal } from "react-icons/fa";
 
 export default function SecuritySection() {
   return (
@@ -24,10 +27,10 @@ export default function SecuritySection() {
           </p>
         </div>
 
-        {/* Content Grid */}
+        {/* Content */}
         <div className="grid md:grid-cols-2 gap-20 items-center">
 
-          {/* LEFT FEATURES */}
+          {/* LEFT SIDE */}
           <div className="space-y-10">
 
             {[
@@ -53,16 +56,11 @@ export default function SecuritySection() {
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-4">
-
-                <div className="mt-1 text-gray-600">
-                  {item.icon}
-                </div>
-
+                <div className="mt-1 text-gray-600">{item.icon}</div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">
                     {item.title}
                   </h4>
-
                   <p className="text-gray-500 text-sm leading-relaxed">
                     {item.desc}
                   </p>
@@ -71,58 +69,53 @@ export default function SecuritySection() {
             ))}
           </div>
 
-          {/* RIGHT CARD MOCKUP */}
-          <div className="flex justify-center">
+          {/* RIGHT SIDE CARD */}
+          <div className="flex justify-center perspective-1000">
 
-            <div className="relative">
+            <div className="relative group">
 
-              {/* Card shadow */}
-              <div className="absolute inset-0 bg-gray-200 rounded-3xl blur-xl opacity-40"></div>
+              {/* Floating Glow */}
+              <div className="absolute -inset-10 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 rounded-3xl blur-3xl opacity-40 group-hover:opacity-60 transition duration-500"></div>
 
-              {/* Card */}
-              <div className="relative bg-black rounded-3xl w-[380px] h-[240px] p-6 text-white shadow-xl">
+              {/* 3D Card */}
+              <div className="relative bg-black rounded-3xl w-[400px] h-[250px] p-6 text-white shadow-2xl transform transition duration-500 group-hover:rotate-y-6 group-hover:-rotate-x-6">
 
-                <div className="absolute top-4 left-4 bg-white/10 p-2 rounded-full">
+                {/* Lock Badge */}
+                <div className="absolute top-4 left-4 bg-white/10 p-2 rounded-full backdrop-blur">
                   <Lock size={14} />
                 </div>
 
-                <div className="mt-10 space-y-3">
-                  <div className="h-4 bg-white/20 rounded w-32"></div>
-                  <div className="h-4 bg-white/20 rounded w-48"></div>
-                  <div className="h-4 bg-white/20 rounded w-24"></div>
+                {/* Card Content */}
+                <div className="mt-12 space-y-4">
+                  <div className="h-4 bg-white/20 rounded w-36"></div>
+                  <div className="h-4 bg-white/20 rounded w-52"></div>
+                  <div className="h-4 bg-white/20 rounded w-28"></div>
                 </div>
 
-                {/* Mastercard circles */}
+                {/* Mastercard */}
                 <div className="absolute bottom-6 right-6 flex">
                   <div className="w-6 h-6 bg-red-500 rounded-full opacity-90"></div>
                   <div className="w-6 h-6 bg-yellow-400 rounded-full -ml-3 opacity-90"></div>
                 </div>
 
-                {/* Masked Numbers */}
+                {/* Card Number */}
                 <div className="absolute bottom-6 left-6 text-sm tracking-widest text-gray-300">
                   **** **** **** 6789
                 </div>
+
               </div>
             </div>
           </div>
 
         </div>
 
-        {/* Logos Row */}
-        <div className="mt-24 flex flex-wrap justify-center items-center gap-16 opacity-60 text-gray-400">
+        {/* Logos */}
+        <div className="mt-28 flex justify-center items-center gap-20 text-gray-800 opacity-70 text-6xl">
 
-          <div className="flex items-center gap-2 text-lg font-semibold">
-            ◯ Logoipsum
-          </div>
-          <div className="flex items-center gap-2 text-lg font-semibold">
-            ◯ Logoipsum
-          </div>
-          <div className="flex items-center gap-2 text-lg font-semibold">
-            ◯ Logoipsum
-          </div>
-          <div className="flex items-center gap-2 text-lg font-semibold">
-            ◯ Logoipsum
-          </div>
+          <FaStripe />
+          <FaCcVisa />
+          <FaCcMastercard />
+          <FaPaypal />
 
         </div>
 
