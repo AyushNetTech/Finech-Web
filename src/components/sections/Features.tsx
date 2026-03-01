@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import BS from "../../../public/feature_img/bankingasaservice.jpg";
 import GB from "../../../public/feature_img/global-payments.jpg";
 import SC from "../../../public/feature_img/scalable.jpg";
@@ -8,22 +10,22 @@ export default function Features() {
     {
       title: "Global Payments",
       desc: "Accept payments in 100+ currencies with instant settlement, ensuring smooth transactions across borders.",
-      image: BS,
+      image: GB, // ✅ fixed
     },
     {
       title: "Banking as a Service",
       desc: "Issue virtual and physical cards effortlessly, securely hold and manage funds, and seamlessly provide a wide range of financial services.",
-      image: "/images/banking-service.png",
+      image: BS,
     },
     {
       title: "Scalability",
       desc: "A robust, API-driven system built to seamlessly support startups and enterprises, providing the flexibility, scalability, and security.",
-      image: "/images/scalability.png",
+      image: SC,
     },
     {
       title: "Compliance & Security",
       desc: "Built-in KYC, AML, and fraud prevention measures to keep every transaction safe and compliant.",
-      image: "/images/compliance.png",
+      image: ST,
     },
   ];
 
@@ -52,7 +54,7 @@ export default function Features() {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition duration-300"
+              className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition duration-300"
             >
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 {item.title}
@@ -62,12 +64,13 @@ export default function Features() {
                 {item.desc}
               </p>
 
-              {/* Image Preview Area */}
-              <div className="rounded-xl overflow-hidden border border-gray-100 bg-gray-50">
-                <img
+              {/* Image Preview */}
+              <div className="rounded-xl overflow-hidden border border-gray-100 bg-gray-50 p-2">
+                <Image
                   src={item.image}
                   alt={item.title}
-                  className="w-full object-cover"
+                  className="w-full h-70 object-contain mx-auto"
+                  priority
                 />
               </div>
             </div>
