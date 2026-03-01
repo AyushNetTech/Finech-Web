@@ -35,7 +35,7 @@ export default function Features() {
 
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-xs uppercase tracking-widest text-blue-600 mb-4">
+          <p className="text-xs uppercase tracking-widest text-blue-600 mb-4 font-bold">
             WHY CHOOSE FINECH?
           </p>
 

@@ -17,7 +17,7 @@ export default function Solution() {
 
         <div className="relative max-w-7xl mx-auto px-6 text-center">
 
-          <p className="text-xs uppercase tracking-[0.3em] text-blue-400 mb-6">
+          <p className="text-xs uppercase tracking-[0.3em] text-blue-400 mb-6 font-bold">
             WHO IS IT FOR?
           </p>
 

@@ -14,7 +14,7 @@ export default function SecuritySection() {
 
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-xs uppercase tracking-[0.3em] text-blue-600 mb-4">
+          <p className="text-xs uppercase tracking-[0.3em] text-blue-600 mb-4 font-bold">
             SECURITY & COMPLIANCE
           </p>
 
