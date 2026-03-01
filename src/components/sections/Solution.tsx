@@ -10,7 +10,7 @@ export default function Solution() {
     <div className="w-full overflow-hidden">
 
       {/* ================= DARK SECTION ================= */}
-      <section className="relative bg-gradient-to-b from-[#050B18] via-[#0B1E35] to-[#0F2C4D] py-32">
+      <section className="relative bg-gradient-to-b from-[#040505] via-[#0b131c] to-[#0F2C4D] py-32">
 
         {/* Dotted Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(#1f3b5c_1px,transparent_1px)] [background-size:24px_24px] opacity-30"></div>
@@ -56,7 +56,7 @@ export default function Solution() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur hover:bg-white/10 transition duration-300"
+                className="bg-black/5 border border-white/10 rounded-3xl p-8 backdrop-blur hover:bg-white/10 transition duration-300"
               >
                 <div className="h-44 rounded-2xl bg-gradient-to-br from-[#3b3f46] to-[#1f2937] flex items-center justify-center text-white mb-8 shadow-inner">
                   {item.icon}
