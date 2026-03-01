@@ -1,5 +1,6 @@
 "use client";
 import Partners from "./Partners";
+import { Mail, Send } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#020617]">
@@ -29,31 +30,36 @@ export default function HeroSection() {
             money, manage risk, and scale globally.
           </p>
 
-          {/* Email / Search Box (Exact Match) */}
-<div className="mt-8">
+          
+          <div className="mt-8">
 
-  <div className="flex items-center h-12 w-full sm:w-[420px] rounded-2xl bg-white border border-slate-800 px-1.5">
+          <div className="flex items-center h-12 w-full sm:w-[420px] rounded-2xl bg-white border border-slate-800 px-2">
 
-    {/* Icon */}
-    <div className="flex h-8 w-8 items-center justify-center rounded-2xl bg-slate-800 text-slate-400 text-sm">
-      ✉
-    </div>
+            {/* Email Icon */}
+            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-slate-800 text-slate-400">
+              <Mail size={16} />
+            </div>
 
-    {/* Input */}
-    <input
-      type="email"
-      placeholder="Send your email"
-      className="flex-1 ml-3 bg-transparent outline-none text-sm text-black placeholder:text-slate-500"
-    />
+            {/* Input */}
+            <input
+              type="email"
+              placeholder="Send your email"
+              className="flex-1 ml-3 bg-transparent outline-none text-sm text-black placeholder:text-slate-500"
+            />
 
-    {/* CTA Button */}
-    <button className="ml-1 h-9 rounded-xl bg-blue-600 px-5 text-sm font-medium text-white hover:opacity-90 transition">
-      Talk to Sales →
-    </button>
+            {/* Desktop Button */}
+            <button className="hidden sm:flex ml-2 h-9 items-center rounded-xl bg-blue-600 px-5 text-sm font-medium text-white hover:opacity-90 transition">
+              Talk to Sales →
+            </button>
 
-  </div>
+            {/* Mobile Icon Button */}
+            <button className="flex sm:hidden ml-2 h-9 w-9 items-center justify-center rounded-xl bg-blue-600 text-white hover:opacity-90 transition">
+              <Send size={16} />
+            </button>
 
-</div>
+          </div>
+
+        </div>
           <Partners />
         </div>
 
