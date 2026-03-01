@@ -5,7 +5,7 @@ import { FaStripe, FaCcVisa, FaCcMastercard, FaPaypal } from "react-icons/fa";
 
 export default function SecuritySection() {
   return (
-    <section className="relative bg-[#F8FAFC] py-32 overflow-hidden">
+    <section className="relative bg-[#F8FAFC] py-16 sm:py-20 lg:py-32 overflow-hidden">
 
       {/* Dotted Background */}
       <div className="absolute inset-0 bg-[radial-gradient(#d1d5db_1px,transparent_1px)] [background-size:22px_22px] opacity-40"></div>
@@ -18,20 +18,20 @@ export default function SecuritySection() {
             SECURITY & COMPLIANCE
           </p>
 
-          <h2 className="text-4xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
             Enterprise-Grade Protection for Your Business
           </h2>
 
-          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base lg:text-lg">
             Our platform is designed to meet the highest industry standards, ensuring your transactions, customer data, and financial operations remain secure and fully compliant with global regulations.
           </p>
         </div>
 
         {/* Content */}
-        <div className="grid md:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-20 items-center">
 
           {/* LEFT SIDE */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {[
                 {
                 icon: <Lock size={20} />,
@@ -90,7 +90,7 @@ export default function SecuritySection() {
               <div className="absolute -inset-10 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 rounded-3xl blur-3xl opacity-40 group-hover:opacity-60 transition duration-500"></div>
 
               {/* 3D Card */}
-              <div className="relative bg-black rounded-3xl w-[400px] h-[250px] p-6 text-white shadow-2xl transform transition duration-500 group-hover:rotate-y-6 group-hover:-rotate-x-6">
+              <div className="relative bg-black rounded-3xl w-[300px] sm:w-[360px] lg:w-[400px] h-[200px] sm:h-[230px] lg:h-[250px] p-4 sm:p-6 text-white shadow-2xl transform transition duration-500 group-hover:rotate-y-6 group-hover:-rotate-x-6">
 
                 {/* Lock Badge */}
                 <div className="absolute top-4 left-4 bg-white/10 p-2 rounded-full backdrop-blur">
@@ -122,7 +122,7 @@ export default function SecuritySection() {
         </div>
 
         {/* Logos */}
-        <div className="mt-28 flex justify-center items-center gap-20 text-gray-800 opacity-70 text-6xl">
+        <div className="mt-16 sm:mt-20 lg:mt-28 flex flex-wrap justify-center items-center gap-10 sm:gap-16 lg:gap-20 text-gray-800 opacity-70 text-4xl sm:text-5xl lg:text-6xl">
 
           <FaStripe />
           <FaCcVisa />
