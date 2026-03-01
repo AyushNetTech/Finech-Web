@@ -2,7 +2,7 @@
 
 export default function SuccessStories() {
   return (
-    <section className="relative bg-white py-24 overflow-hidden">
+    <section className="relative bg-[#f5f6f7] py-24 overflow-hidden">
 
       {/* Dot background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#e5e7eb_1px,transparent_0)] [background-size:24px_24px]" />
