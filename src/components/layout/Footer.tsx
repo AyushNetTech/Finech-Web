@@ -25,10 +25,10 @@ export default function Footer() {
               Product
             </p>
             <ul className="space-y-3 text-sm text-slate-700">
-              <li className="hover:text-white cursor-pointer">Payments</li>
-              <li className="hover:text-white cursor-pointer">Pricing</li>
-              <li className="hover:text-white cursor-pointer">Integrations</li>
-              <li className="hover:text-white cursor-pointer">API Docs</li>
+              <li className="hover:underline cursor-pointer">Payments</li>
+              <li className="hover:underline cursor-pointer">Pricing</li>
+              <li className="hover:underline cursor-pointer">Integrations</li>
+              <li className="hover:underline cursor-pointer">API Docs</li>
             </ul>
           </div>
 
@@ -38,10 +38,10 @@ export default function Footer() {
               Company
             </p>
             <ul className="space-y-3 text-sm text-slate-700">
-              <li className="hover:text-white cursor-pointer">About</li>
-              <li className="hover:text-white cursor-pointer">Careers</li>
-              <li className="hover:text-white cursor-pointer">Blog</li>
-              <li className="hover:text-white cursor-pointer">Contact</li>
+              <li className="hover:underline cursor-pointer">About</li>
+              <li className="hover:underline cursor-pointer">Careers</li>
+              <li className="hover:underline cursor-pointer">Blog</li>
+              <li className="hover:underline cursor-pointer">Contact</li>
             </ul>
           </div>
 
@@ -51,10 +51,10 @@ export default function Footer() {
               Resources
             </p>
             <ul className="space-y-3 text-sm text-slate-700">
-              <li className="hover:text-white cursor-pointer">Documentation</li>
-              <li className="hover:text-white cursor-pointer">Help Center</li>
-              <li className="hover:text-white cursor-pointer">Status</li>
-              <li className="hover:text-white cursor-pointer">Security</li>
+              <li className="hover:underline cursor-pointer">Documentation</li>
+              <li className="hover:underline cursor-pointer">Help Center</li>
+              <li className="hover:underline cursor-pointer">Status</li>
+              <li className="hover:underline cursor-pointer">Security</li>
             </ul>
           </div>
 
