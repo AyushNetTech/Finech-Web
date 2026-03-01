@@ -25,12 +25,12 @@ export default function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-6 text-sm">
-          <button className="text-white hover:text-slate-400 transition">
+          <button className="text-white hover:text-slate-400 transition cursor-pointer">
             Login
           </button>
 
-          <button className="flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-white font-medium hover:opacity-90 transition">
-            Get Started <span>↗</span>
+          <button className="ml-1 h-9 rounded-xl bg-blue-600 px-5 cursor-pointer text-sm font-medium text-white hover:opacity-90 transition">
+            Get Started <span></span>
           </button>
         </div>
 
