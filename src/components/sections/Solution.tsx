@@ -10,7 +10,7 @@ export default function Solution() {
     <div className="w-full overflow-hidden">
 
       {/* ================= DARK SECTION ================= */}
-      <section className="relative bg-gradient-to-b from-[#040505] via-[#0b131c] to-[#0F2C4D] py-32">
+      <section className="relative bg-gradient-to-b from-[#040505] via-[#0b131c] to-[#0F2C4D] py-16 sm:py-24 lg:py-32">
 
         {/* Dotted Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(#1f3b5c_1px,transparent_1px)] [background-size:24px_24px] opacity-30"></div>
@@ -21,16 +21,16 @@ export default function Solution() {
             WHO IS IT FOR?
           </p>
 
-          <h2 className="text-5xl font-semibold text-white mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6 leading-tight">
             Financial Solutions for Every Industry
           </h2>
 
-          <p className="text-slate-300 max-w-2xl mx-auto mb-20 text-lg">
+          <p className="text-slate-300 max-w-2xl mx-auto mb-12 sm:mb-16 lg:mb-20 text-sm sm:text-base lg:text-lg">
             Our platform empowers you to handle transactions, streamline operations, and integrate financial services seamlessly.
           </p>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
 
             {[
               {
@@ -56,9 +56,9 @@ export default function Solution() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-black/5 border border-white/10 rounded-2xl p-8 backdrop-blur hover:bg-white/10 transition duration-300"
+                className="bg-black/5 border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur hover:bg-white/10 transition duration-300"
               >
-                <div className="h-44 rounded-2xl bg-gradient-to-br from-[#3b3f46] to-[#1f2937] flex items-center justify-center text-white mb-8 shadow-inner">
+                <div className="h-36 sm:h-40 lg:h-44 rounded-2xl bg-gradient-to-br from-[#3b3f46] to-[#1f2937] flex items-center justify-center text-white mb-8 shadow-inner">
                   {item.icon}
                 </div>
 
@@ -76,9 +76,9 @@ export default function Solution() {
       </section>
 
       {/* ================= LIGHT SECTION ================= */}
-      <section className="relative bg-gradient-to-b from-[#0F2C4D] to-[#a1b7d4] py-32">
+      <section className="relative bg-gradient-to-b from-[#0F2C4D] to-[#a1b7d4] py-16 sm:py-24 lg:py-32">
 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-20 items-center">
 
           {/* LEFT CONTENT */}
           <div>
@@ -86,13 +86,13 @@ export default function Solution() {
               APIs & DEVELOPER
             </p>
 
-            <h2 className="text-5xl font-semibold text-gray-900 mb-6 leading-tight text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 leading-tight text-white">
               Seamless Integration with
               <br />
               Powerful Developer Tools
             </h2>
 
-            <p className="text-gray-600 mb-10 text-lg text-white    ">
+            <p className="mb-8 sm:mb-10 text-sm sm:text-base lg:text-lg text-white">
               Integrate Finech effortlessly with our developer-friendly APIs, designed for speed, security, and scalability.
             </p>
 
@@ -108,7 +108,7 @@ export default function Solution() {
           </div>
 
           {/* RIGHT CODE CARD */}
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 w-full">
 
             {/* Mac Top Bar */}
             <div className="bg-gray-100 px-5 py-4 flex gap-2">
@@ -118,7 +118,7 @@ export default function Solution() {
             </div>
 
             {/* CODE CONTENT */}
-            <div className="p-8 font-mono text-sm text-gray-800 leading-6">
+            <div className="p-5 sm:p-8 font-mono text-xs sm:text-sm text-gray-800 leading-6 overflow-x-auto">
 
               <span className="text-green-600 font-semibold">GET</span>{" "}
               <span className="text-blue-600">/transactions/txn_67890</span>
